@@ -1,0 +1,68 @@
+
+
+
+<div class="  row filters ">
+<span  >Filter :</span>
+<label ng-repeat="type in types" for="{{type.name}}" class="{{type.name}} art-label"> <input type="checkbox" name="name"   id="{{type.name}}"  ng-model="type.selected"  > <span></span> <span class="title">{{type.name}}</span></label>
+
+<!-- <label for="fleisch" class="fleisch art-label"> <input type="checkbox" name="name"   id="fleisch" ng-model=""> <span></span> <span class="title">Fleisch</span></label>
+ <label for="gemuse" class="gemuse art-label"> <input type="checkbox" name="name"   id="gemuse"><span></span><span class="title">Gemüse</span></label>
+<label for="obst" class="obst art-label"> <input type="checkbox" name="name"   id="obst"><span></span> <span class="title">Obst</span> </label> -->
+
+</div>
+
+<div class="row">
+
+
+<div class="col-md-3 col-sm-4 col-xs-6 item" ng-repeat="thing in awesomeThings | filter:myFunc">
+  <div class="item-body">
+
+  <img   alt="yaomane image "  ng-src="{{thing.bild}}"/>
+  <br>
+  <br>
+  <br>
+  <label>{{thing.name}} </label>  <span class="art-label {{thing.art}} pull-right">{{thing.art}}</span>
+<p>
+  {{thing.fliesstext}}
+</p>
+<a href="#" target="_parent">mehr Erfahren </a>
+</div>
+  </div>
+<!-- <div class="col-md-3 col-sm-4 col-xs-6 item">
+  <div class="item-body">
+
+
+  <img src="images/banana.png" alt="yaomane image " /> <br>
+  <label>Apfel </label>  <span class="art-label gemuse pull-right">gemuse</span>
+<p>
+  lore asldkfjsa dfljaskdlfjlsakd jflkasjd flksjadklf jsalkdflksad jfklsd aklfjsdaj kfslkajfd sadklfj sdlkaf
+  asdlfkjsad lkfjlsdkajfklsad jjklf sjadklfj klsda jfkl   k salkdfj saldkf aslkd
+</p>
+<a href="#" target="_parent">mehr Erfahren </a>
+</div>
+  </div> -->
+<!-- <div class="col-md-3 col-sm-4 col-xs-6 item " >
+  <div class="item-body">
+
+  <img src="images/eggplate.png" alt="yaomane image " /> <br>
+  <label>Apfel </label>  <span class="art-label obst pull-right">Obst</span>
+<p>
+  lore asldkfjsa dfljaskdlfjlsakd jflkasjd flksjadklf jsalkdflksad jfklsd aklfjsdaj kfslkajfd sadklfj sdlkaf
+  asdlfkjsad lkfjlsdkajfklsad jjklf sjadklfj klsda jfkl   k salkdfj saldkf aslkd
+</p>
+<a href="#" target="_parent">mehr Erfahren </a>
+</div>
+</div> -->
+<!-- <div class="col-md-3 col-sm-4 col-xs-6 item">
+  <div class="item-body">
+
+  <img src="images/yeoman.png" alt="yaomane image " /> <br>
+  <label>Apfel </label>  <span class="art-label fleisch pull-right">Fleisch</span>
+<p>
+  lore asldkfjsa dfljaskdlfjlsakd jflkasjd flksjadklf jsalkdflksad jfklsd aklfjsdaj kfslkajfd sadklfj sdlkaf
+  asdlfkjsad lkfjlsdkajfklsad jjklf sjadklfj klsda jfkl   k salkdfj saldkf aslkd
+</p>
+<a href="#" target="_parent">mehr Erfahren </a>
+</div>
+</div> -->
+</div>

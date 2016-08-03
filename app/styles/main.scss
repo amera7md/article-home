@@ -1,0 +1,106 @@
+// bower:scss
+// endbower
+
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+body {
+  padding: 0;
+  background-color:#c8c8c8;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.navbar-default{
+  background-color: inherit;
+  border-color: inherit;
+}
+.navbar{
+  border: inherit;
+}
+
+/* Custom page header */
+.header {
+   margin-bottom: 10px;
+
+  /* Make the masthead heading the same height as the navigation */
+  h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 40px;
+    padding-bottom: 19px;
+  }
+}
+
+.art-label{
+      margin-right: 10px;
+      border-radius: 30px;
+padding: 3px 8px;
+font-size: x-small;
+text-transform: capitalize;
+span.title{
+  position: relative;
+    top: -3px;
+    padding: 0 5px;
+    font-size: 10px;
+}
+}
+// labels for categories
+.gemuse{
+  background-color: green;
+  color: white;
+}
+.obst{
+  background-color: orange;
+}
+.fleisch{
+background-color:red;
+color:white;
+}
+.item{
+padding: 20px 10px;
+   img{
+     width: 205px;
+     height: 150px;
+   }
+   label{
+
+   }
+   p{
+     font-size: small;
+    padding: 15px;
+   }
+   .item-body{
+     padding: 0 20px;
+     border-width: 1px;
+     border-style: solid;
+     border-color: transparent;
+     background-color: #fff;
+     height: 335px;
+   }
+}
+
+// hide the actual check box
+input[type="checkbox"] {
+   display:none;
+}
+input[type="checkbox"] +  span {
+   display:inline-block;
+   width:20px;
+   height:16px;
+       margin-left: 5px;
+   background:url(../images/checkbox-radio-sheet.png) left top no-repeat;
+}
+input[type="checkbox"]:checked + span{
+  background:url(../images/checkbox-radio-sheet.png) left -20px no-repeat;
+
+}
